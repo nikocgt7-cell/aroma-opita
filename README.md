@@ -1,2 +1,7 @@
-# aroma-opita
-Landing page de cafetería con Tailwind CSS e IA
+Iteración	Prompt / Ajuste Enviado a la IA	Resultado Buscado / Problema a Resolver	¿Funcionó?	Observaciones / Ajuste Obtenido
+1	"El menú hamburguesa en dispositivos móviles abre la lista de navegación, pero no se cierra automáticamente al hacer clic en un enlace de sección."	Corregir la interacción en JS para que el menú se oculte al seleccionar una opción.	Sí	Se agregó un evento addEventListener a cada enlace para cambiar la clase del menú.
+2	"El contraste entre el título blanco y la imagen de fondo en la sección Hero es muy bajo en pantallas de celular."	Aumentar la legibilidad del texto principal sobre la imagen de fondo.	Sí	Se aplicó una capa oscura flotante (overlay) con la clase bg-black/60.
+3	"El aviso emergente (toast) de confirmación del formulario de reserva aparece al enviar, pero no se oculta automáticamente a los 4 segundos."	Asegurar que la notificación desaparezca de forma programada tras ser enviada.	Sí	Se ajustó la función de validación incluyendo un setTimeout de 4000 ms.
+4	"La sección de productos del menú muestra 3 columnas en tabletas, lo que provoca que las tarjetas se vean amontonadas."	Corregir el comportamiento responsive del grid para pantallas medianas.	Sí	Se ajustaron los breakpoints a grid-cols-1 sm:grid-cols-2 lg:grid-cols-3.
+5	"Faltan atributos accesibles de foco visual en los botones del formulario e imágenes sin etiqueta alt."	Cumplir con las pautas de accesibilidad para alcanzar una nota Lighthouse ≥ 90.	Sí	Se agregaron las etiquetas alt="" descriptivas y clases focus:ring-2 focus:ring-acento.
+
